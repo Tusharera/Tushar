@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* position: relative; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: fit-content;
+  background-image: url("../../images/registration_form-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+/* ------------ */
+#NAVBAR {
+  background-color: rgba(0, 0, 0, 0.283);
+  backdrop-filter: blur(9px);
+
+  z-index: 999;
+}
+
+
+#registration_form {
+  /* position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+  background-color: transparent;
+}
+
+.registration-card {
+  background-color: transparent;
+  color: white;
+
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.607), 0px 0px 15px rgba(255, 255, 255, 0.438) !important;
+
+  background-color: rgba(255, 255, 255, 0.114);
+
+  backdrop-filter: blur(9px);
+}
+
+.registration-card a {
+  color: white !important;
+}

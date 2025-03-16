@@ -1,0 +1,27 @@
+body {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.card-header {
+  background-color: #343a40;
+  color: white;
+}
+
+.btn-custom {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #218838;
+  color: white;
+}
+
+.table-dark th {
+  background-color: #343a40;
+}
+
+.search-input {
+  margin-bottom: 1rem;
+}

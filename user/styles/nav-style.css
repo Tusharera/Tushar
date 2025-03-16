@@ -1,0 +1,7 @@
+#NAVBAR {
+  background-color: rgba(0, 0, 0, 0.283);
+  backdrop-filter: blur(9px);
+
+  color: white !important;
+  z-index: 999;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/signed-in.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">
+            Admin Login
+        </div>
+        <form id="signedInForm">
+            <div class="field">
+                <input type="email" name="email" required>
+                <label>Email Address</label>
+            </div>
+            <div class="field">
+                <input type="password" name="password" required>
+                <label>Password</label>
+            </div>
+
+            <div class="field">
+                <input type="submit" value="Login">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#signedInForm').submit(function (event) {
+            event.preventDefault(); // Prevent the form from submitting the default way
+
+            // Get the form data
+            var formData = {
+                email: $('input[name="email"]').val(),
+                password: $('input[name="password"]').val()
+            };
+
+            // Send the login request using AJAX
+            $.ajax({
+                type: 'POST',
+                url: '../repos/login.php',
+                data: formData,
+                success: function (response) {
+                    // console.log(response);
+                    response = JSON.parse(response);
+                    if (response.status === 'success') {
+                        alert("Login Success");
+                        window.location.replace("./admin-dashboard.php");
+                    } else {
+                        alert(response.message);
+                    }
+                },
+                error: function () {
+                    alert('An error occurred while trying to log in.');
+                }
+            });
+        });
+    });
+</script>
+
+
+</html>

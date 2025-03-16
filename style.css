@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/fire_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* ================== */
+.heading {
+  margin-top: 30vh;
+  margin-left: 50%;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.get_started_btn {
+  text-decoration: none;
+  display: block;
+  width: 180px;
+  text-align: center;
+  height: 50px;
+  margin-top: 40px;
+  margin-left: 45%;
+
+  border-radius: 10px;
+  padding: 10px;
+
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  box-shadow: 0px 0px 0px red,
+    0px 0px 5px rgb(180, 60, 60);
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.get_started_btn:hover {
+  transform: scale(1.2);
+}
